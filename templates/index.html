@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div id="home-section">
+    <h1>Home</h1>
+    <div class="home-container">
+        <div class="home-left-box">
+            <div class="home-left-box-top">
+                <h3>Time spent on calls</h3>
+                <p><span class="arrow-green">&#8593;</span></p>
+            </div>
+            <p><strong>1:10:55</strong></p>
+            <h2><span class="green">20%</span>&nbsp;increase compared to last week</h2>
+        </div>
+        <div class="home-right-box">
+            <div class="home-right-box-top">
+                <h3>Spam calls</h3>
+                <p><span class="arrow-red">&#8595;</span></p>
+            </div>
+            <p><strong>8</strong></p>
+            <h2><span class="red">10%</span>&nbsp;decrease compared to last week</h2>
+        </div>
+    </div>
+</div>
+{% endblock body %}

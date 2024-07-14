@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div id="history-section">
+    <h1>History</h1>
+    <table class="history-table">
+        <tr>
+            <th>Caller</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Download</th>
+        </tr>
+        {% for entry in history_entries %}
+        <tr>
+            <td class="skyblue">{{ entry.Caller }}</td>
+            <td>{{ entry.Date }}</td>
+            <td><span class="{{ entry.Category }}">{{ entry.Category }}</span></td>
+            <td><a href="#" class="download">Download</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock body %}

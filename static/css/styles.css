@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080800;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/static/img/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.btn {
+    max-width: 600px;
+    height: auto;
+}
+btn {
+    background: #fff;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    
+    display: block;
+    margin: 0;
+}
+
+.btn a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+.btn a:hover {
+    color: rgb(239, 233, 233); /* Change text color on hover */
+}
+
+#header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gif-container {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: 400px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+button {
+    background: #f7b386;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0;
+    outline: none; /* Remove button outline */
+    width: 285px;
+    margin-left: 76px;
+}
+
+button:hover {
+    background: #a98df1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

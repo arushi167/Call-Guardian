@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Call Guardian</title>
+</head>
+
+<body>
+
+    <div id="left-section">
+        <div id="logo">Call Guardian</div>
+        <a href="/dashboard" class="menu-button" ><i class="fas fa-home"></i>Home</a>
+        <a href="/contacts" class="menu-button" ><i
+                class="fas fa-user-friends"></i>Contacts</a>
+        <a href="/history" class="menu-button" ><i class="fas fa-history"></i>History</a>
+        <a href="/settings" class="menu-button" ><i class="fas fa-cogs"></i>Settings</a>
+        <a href="/logout" class="menu-button" ><i class="fas fa-cogs"></i>Logout</a>
+    </div>
+
+
+    <div id="right-section">
+
+        <div class="navbar">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <div class="notification-container">
+                <i class="fas fa-bell notification-icon"></i>
+                <div class="notification-bar">2</div>
+            </div>
+            <div class="user-profile">
+                <img src="/static/img/pp.png" alt="User Profile" class="user-pic">
+            </div>
+        </div>
+
+        {% block body %}{% endblock body %}
+    </div>
+</body>
+</html>

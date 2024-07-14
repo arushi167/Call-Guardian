@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div id="settings-section">
+    <h1>Settings</h1>
+    <form id="settings-form">
+        <div class="rules-table-container">
+            <table class="rules-table">
+                <tr>
+                    <th>For Call Regarding</th>
+                    <th>Do the following action</th>
+                    <th> </th>
+                </tr>
+                <tr class="rule-row">
+                    <td>
+                        <select>
+                            <option value="sale">Sale</option>
+                            <option value="support">Support</option>
+                            <option value="billing">Billing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="record">Record</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="escalate">Escalate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="rule-row">
+                    <td>
+                        <select>
+                            <option value="sale">Sale</option>
+                            <option value="support">Support</option>
+                            <option value="billing">Billing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="record">Record</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="escalate">Escalate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="rule-row">
+                    <td>
+                        <select>
+                            <option value="sale">Sale</option>
+                            <option value="support">Support</option>
+                            <option value="billing">Billing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="record">Record</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="escalate">Escalate</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <p class="button">
+            <button type="button" class="save-settings">Save Settings</button>
+            <button type="button" class="restart-settings">Restart Setting</button>
+        </p>
+    </form>
+</div>
+{% endblock body %}
